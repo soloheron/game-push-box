@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>推箱子游戏 - 1000关</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>推箱子游戏 - 1000关</h1>
+            <div class="game-info">
+                <span id="level-info">关卡: 1</span>
+                <span id="moves">移动次数: 0</span>
+            </div>
+            <div class="controls">
+                <button id="prev-level">上一关</button>
+                <button id="next-level">下一关</button>
+                <button id="restart">重新开始</button>
+                <button id="random-level">随机关卡</button>
+            </div>
+        </div>
+        <canvas id="game-canvas"></canvas>
+        <div class="footer">
+            <div class="instructions">
+                <h3>操作说明:</h3>
+                <p>使用方向键或WASD键移动推箱子</p>
+                <p>R键重新开始当前关卡</p>
+                <p>Z键撤销上一步</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="src/js/levels.js"></script>
+    <script src="src/js/levelGenerator.js"></script>
+    <script src="src/js/game.js"></script>
+</body>
+</html> 
